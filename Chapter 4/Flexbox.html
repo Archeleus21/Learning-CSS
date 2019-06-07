@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flexible Box Layout module</title>
+  </head>
+  <body>
+      /*allows alignment, direction, order, size*/
+      /*the flex layout is based on the flex flow directions,
+
+      flexcontainer
+  start---------'items are layed out using the "Main axis"'------end
+          item 1  item2       item3
+                 ^
+                 ^
+                 ^
+            cross axis goes between items
+      */
+      /*
+      example:
+        first define a parent elemnt as the "flex container"
+        any direct children become "flex items"
+        then using various flex properties child items can be layed out in any direciton.
+
+        when you define a "flex container" you define a flowdirection for the items inside of it.
+          example:
+            .container
+            {
+              display: flex;
+              flex-direction: row;
+            }
+            .container
+            {
+              display: flex;
+              flex-direction: column;
+            }
+
+        think of flexbox as layout the page from the content on out.
+        child elements declare how they would like to interact with one another
+        within their parent element flexbox container.
+        so the layout is dependent on the content.
+        */
+
+  </body>
+</html>

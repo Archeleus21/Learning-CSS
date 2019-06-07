@@ -1,0 +1,85 @@
+<!<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Element Positioning</title>
+  </head>
+
+  <Body>
+    /*Element Positioning is a layout concept.  it is used
+    to take an element on a page and control where and how it is positioned
+    on a page relative to the other elements.*/
+    /* there are 3 types of positioning,
+    normal flow
+    element floating
+    absolute Positioning*/
+    /*normal flow is when you do nothing to position the elements, a default layout.
+    -block-level elements such as
+    headings
+    paragraphs
+    divs
+    articles
+    aside
+    and more fall into this catagory;
+    -Inline Elements fall into the block-levels such as
+    images
+    links
+    spans*/
+
+    /*Position property
+    accepts 1 of 5 values
+    static, relative, absolute, inherit, fixed.  (inherit takes properties from parent)*/
+
+    /*example of Relative Positioning:
+    .box1
+    {
+      position: relative;
+      left: 100px;
+      top: 50px;
+    }
+
+          box1 (and down 50px)
+    box2
+    box3
+    */
+
+    /* example of Absolute Positioning:
+        box 2 and 3 move up to fill the space since box1 has been removed from
+        the normal document flow.
+    .box1
+    {
+      position: absolute;
+      left: 100px;
+      top: 50px;
+    }
+
+    box2  box1(and down 50px)
+    box3
+    */
+
+    /* example of Fixed Positioning:
+        in fixed positioning the "logo" moves with the viewport
+        and no matter where the user has scrolled to the "logo" stays
+        in the same spot.
+    .logo
+    {
+      position: fixed;
+      top: 50px;
+      left: 100px;
+    }
+    */
+
+    /* position elements can stack on top of eachother:
+
+    .content
+    {
+      z-index: 1;
+    }
+
+    .quote
+    {
+      z-index: 2;
+    }
+    */
+  </Body>
+</html>
