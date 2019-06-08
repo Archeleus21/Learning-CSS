@@ -1,0 +1,42 @@
+/*new trend called mobile first
+  styles are applied first to small view ports then
+  advanced style and overrides are written for larger screens.
+  -first default styles for small viewports.
+  -overrides default styles for larger viewports.
+  -only sends data needed for that device size.
+  -uses min-width media queries.
+
+  example:
+  tradition/desktop first css:
+  //settings for larger screens
+  h1
+  {
+    font-size: 60px;
+  }
+
+  //settings for smaller screens
+  @media (max-width: 640px)
+  {
+    h1
+    {
+      font-size: 30px;
+    }
+  }
+
+  example:
+  Mobile first css:
+  //settings for smaller screens
+  h1
+  {
+    font-size: 30px;
+  }
+
+  //settings for larger screens
+  @media (min-width: 640px)
+  {
+    h1
+    {
+      font-size: 60px;
+    }
+  }
+*/

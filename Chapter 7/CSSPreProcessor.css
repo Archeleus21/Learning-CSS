@@ -1,0 +1,72 @@
+/*a preprocessor is a scripting language that extends css.
+  You would write your css in a slightly different form
+  then your code will be translated into actual css.
+
+  they give advanced features such as:
+  -variables
+  -mixins
+  -nested selectors
+  -functions
+
+  they save you time because of the advanced features and re-usability
+
+  options for preprocessors
+  -Sass
+  -LESS
+  -Stylus
+
+  example: before preprocessor CSS(different):
+  a
+  {
+    color: white;
+  }
+
+  p
+  {
+    margin-bottom: 16px;
+  }
+
+  .site-footer
+  {
+    background-color: gray;
+    color: white;
+    a
+    {
+      color: red;
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
+
+    p
+    {
+      margin: 0;
+    }
+  }
+=============================================================
+  example: after preprocessor CSS(regular):
+  a {
+    color: white;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  .site-footer {
+    background-color: gray;
+    color: white;
+  }
+  .site-footer a {
+    color: red;
+  }
+  .site-footer a:hover {
+    text-decoration: underline;
+  }
+  .site-footer p {
+    margin: 0;
+  }
+
+
+*/

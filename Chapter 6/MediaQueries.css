@@ -1,0 +1,23 @@
+/*media types
+  all
+  print
+  screen
+  speech*/
+
+/*  you can control which bit of css works based on what type is
+being used.
+
+example:
+  @media not|only mediatype and (media feature)
+  {
+    //styles go here
+  }
+
+  @media only screen and (min-width: 800px)
+  {
+    .site-title
+    {
+      text-align: left;
+    }
+  }
+  */
